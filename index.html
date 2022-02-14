@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./script.js">
+  <title>Movies catalog</title>
+</head>
+<body>
+  <div class="container">
+    <h1 class="visually-hidden">
+      Movies
+    </h1>
+    <h2 class="fs-2 text-center my-4">
+      |Movies catalog
+    </h2>
+    <div class="row g-5 mb-5">
+      <div class="col-4">
+        <form action="https://echo.htmlacademy.ru/" target="blank" method="post">
+          <input class="form-control mb-4 p-2" type="text" placeholder="ave" name="User name" aria-label="Entry your ave">
+          <input class="form-control mb-4 p-2" type="text" placeholder="5" name="User age" aria-label="Entry your age">
+
+          <select class="form-select mb-4 p-2" name="User check">
+            <option value="All">All</option>
+            <option value="one">one</option>
+            <option value="two">two</option>
+          </select>
+
+          <select class="form-select mb-4 p-2" name="User check">
+            <option value="Rating (high to low)">Rating (high to low)</option>
+            <option value="one">one</option>
+            <option value="two">two</option>
+          </select>
+
+          <button class="btn-primary rounded-3 mb-5 p-2 w-100">
+            Search
+          </button>
+        </form>
+
+        <h3 class="fs-2 mb-3">Bookmarked movies</h3>
+        <ul class="border rounded-3 m-0 p-0">
+          <li class="list-unstyled border-bottom ps-4 pt-3 pb-3">
+            <h4 class="fs-5">
+              Avengers:Infinity War
+            </h4>
+            <button class="btn btn-danger border rounded-3" type="button">
+              Remove
+            </button>
+          </li>
+          <li class="list-unstyled border-bottom ps-4 pt-3 pb-3">
+            <h4 class="fs-5">
+              The Avengers
+            </h4>
+            <button class="btn btn-danger border rounded-3"  type="button">
+              Remove
+            </button>
+          </li>
+          <li class="list-unstyled ps-4 pt-3 pb-3">
+            <h4 class="fs-5">
+              12 Years a Slave
+            </h4>
+            <button class="btn btn-danger border rounded-3" type="button">
+              Remove
+            </button>
+          </li>
+        </ul>
+      </div>
+      <div class="col-8">
+        <h3 class="fs-4">
+          Search results:39
+        </h3>
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+          <p class="m-0 p-0">Use the form on the left to search for a movie</p>
+        </div>
+        <div class="row mb-5">
+          <div class="col-6">
+            <div class="border border-2 rounded">
+              <img class="p-0" src="https://via.placeholder.com/409x250" alt="Avengers movie">
+              <div class="p-4">
+                <h4 class="fs-4">
+                  Avengers: Infinity War
+                </h4>
+                <span>
+                  <img src="./img/calendar.png" alt="calendar" width="20" height="20">
+                  <span>2018</span>
+                </span>
+                <span class="d-block mt-3 mb-3">
+                  <img src="./img/star.png" alt="star" width="20" height="20">
+                  <span>8.7</span>
+                </span>
+                <button class="btn btn-outline-primary">
+                  Watch traler
+                </button>
+                <button class="btn btn-outline-secondary">
+                  Watch traler
+                </button>
+                <button class="btn btn-outline-success">
+                  Watch traler
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 ">
+            <div class="border border-2 rounded">
+              <img class="p-0" src="https://via.placeholder.com/409x250" alt="Avengers movie">
+              <div class="p-4">
+                <h4 class="fs-4">
+                  The Avengers
+                </h4>
+                <span>
+                  <img src="./img/calendar.png" alt="calendar" width="20" height="20">
+                  <span>2012</span>
+                </span>
+                <span class="d-block mt-3 mb-3">
+                  <img src="./img/star.png" alt="star" width="20" height="20">
+                  <span>8.1</span>
+                </span>
+                <button class="btn btn-outline-primary">
+                  Watch traler
+                </button>
+                <button class="btn btn-outline-secondary">
+                  Watch traler
+                </button>
+                <button class="btn btn-outline-success">
+                  Watch traler
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <nav aria-label="Next page" class="d-flex justify-content-center">
+          <ul class="pagination pagination-md">
+            <li class="page-item active" aria-current="page">
+              <span class="page-link">1</span>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

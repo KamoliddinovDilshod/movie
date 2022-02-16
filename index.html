@@ -4,8 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/bootstrap.min.css">
-  <link rel="stylesheet" href="./script.js">
+  <link rel="stylesheet" href="./bootstarp/css/bootstrap.min.css">
   <title>Movies catalog</title>
 </head>
 <body>
@@ -76,8 +75,33 @@
         </div>
         <div class="row mb-5">
           <div class="col-6">
-            <div class="border border-2 rounded">
-              <img class="p-0" src="https://via.placeholder.com/409x250" alt="Avengers movie">
+            <div class="card border border-2 rounded">
+              <div id="carusel1" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carusel1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carusel1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carusel1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./img/first.jpg" class="d-block w-100" alt="Avengers: Infinity War">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/secound.jpg" class="d-block w-100" alt="Avengers: Infinity War">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/three.jpg" class="d-block w-100" alt="Avengers: Infinity War">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carusel1" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carusel1" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
               <div class="p-4">
                 <h4 class="fs-4">
                   Avengers: Infinity War
@@ -93,18 +117,43 @@
                 <button class="btn btn-outline-primary">
                   Watch traler
                 </button>
-                <button class="btn btn-outline-secondary">
-                  Watch traler
+                <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#avengers">
+                  More Info
                 </button>
                 <button class="btn btn-outline-success">
-                  Watch traler
+                  Bookmark
                 </button>
               </div>
             </div>
           </div>
           <div class="col-6 ">
-            <div class="border border-2 rounded">
-              <img class="p-0" src="https://via.placeholder.com/409x250" alt="Avengers movie">
+            <div class="card border border-2 rounded">
+              <div id="carusel2" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carusel2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carusel2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carusel2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./img/three.jpg" class="d-block w-100" alt="The Avengers">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/avengersf.jpg" class="d-block w-100" alt="The Avengers">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/avengerss.jpg" class="d-block w-100" alt="The Avengers">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carusel2" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carusel2" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
               <div class="p-4">
                 <h4 class="fs-4">
                   The Avengers
@@ -117,14 +166,14 @@
                   <img src="./img/star.png" alt="star" width="20" height="20">
                   <span>8.1</span>
                 </span>
-                <button class="btn btn-outline-primary">
+                <button type="button" class="btn btn-outline-primary">
                   Watch traler
                 </button>
-                <button class="btn btn-outline-secondary">
-                  Watch traler
+                <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#theavengers">
+                  More Info
                 </button>
-                <button class="btn btn-outline-success">
-                  Watch traler
+                <button type="button" class="btn btn-outline-success">
+                  Bookmark
                 </button>
               </div>
             </div>
@@ -140,6 +189,44 @@
             <li class="page-item"><a class="page-link" href="#">4</a></li>
           </ul>
         </nav>
+      </div>
+    </div>
+  </div>
+
+  <script src="./bootstarp/js/bootstrap.js"></script>
+  <div class="modal fade" id="theavengers" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">The Avengers</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="p-0 m-0">
+            Marvel's The Avengers (classified under the name Marvel Avengers Assemble in the United Kingdom and Ireland), or simply The Avengers, is a 2012 American superhero film based on the Marvel Comics superhero team of the same name.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Understood</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="avengers" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="avengersLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="avengersLabel">Avengers: Infinity War</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Avengers: Infinity War is a 2018 American superhero film based on the Marvel Comics superhero team the Avengers.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Understood</button>
+        </div>
       </div>
     </div>
   </div>
